@@ -1,19 +1,14 @@
 #ifndef DESENALG_LIBRARY_H
 #define DESENALG_LIBRARY_H
 
-struct Tarefa {
-    int prioridade;
-    char categoria[100];
-    char descricao[300];
-    struct Tarefa* proxima;
-};
-typedef struct Tarefa Tarefa;
+typedef struct Tarefas { 
+ int prioridade;
+ char categoria[100];
+ char descricao[300];
+} Tarefas;
 
-Tarefa* criar(int prioridade, const char* categoria, const char* descricao);
-void adicionar(Tarefa** lista, Tarefa* novaTarefa);
-void listar(Tarefa* lista);
-void deletar(Tarefa** lista, int prioridade);
-void salvar(Tarefa* lista, const char* nomeArquivo);
-Tarefa* carregar(const char* nomeArquivo); 
-
+void criaTarefas(int numeroTarefa);
+void listaTarefas(int numeroTarefa);
+void deltarTarefa(int numeroTarefa, int prioridade);
+void verficaPrioridade(int numeroDeTarefa);
 #endif 
