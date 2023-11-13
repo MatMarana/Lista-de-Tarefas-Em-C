@@ -81,6 +81,12 @@ int main() {
         exportaPrioridade(numeroDeTarefas,escolherPrioridade);
         break;
       }
+      case(10):{
+        printf("Digite a categoria das tarefas: ");
+        scanf("%s", escolherCategoria);
+        exportaCategoria(numeroDeTarefas, escolherCategoria);
+        break;
+      }
       default:{
         printf("Opção inválida. Tente novamente.\n");
       }
