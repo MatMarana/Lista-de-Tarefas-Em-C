@@ -30,7 +30,7 @@ int main() {
       break;
       }
       case(2):{
-        printf("Digite a prioridade da Tarefa que deseja deletar:");
+        printf("Digite a prioridade da Tarefa que deseja deletar: ");
         scanf("%d", &escolherPrioridade);
         deltarTarefa(numeroDeTarefas, escolherPrioridade);
         break;
@@ -40,30 +40,36 @@ int main() {
       break;
       }
       case(4):{
+
+        printf("Digite a prioridade da Tarefa que deseja alterar: ");
+        scanf("%d", &escolherPrioridade);
+        alteraTarefa(numeroDeTarefas, escolherPrioridade);
         break;
       }
       case(5):{
         printf("Digite a prioridade das tarefas");
+
         scanf("%d", &escolherPrioridade);
         filtraPrioridade(numeroDeTarefas,escolherPrioridade);
         break;
       }
       case(6):{
-        printf("Digite o estado das tarefas");
+        printf("Digite o estado das tarefas: ");
         scanf("%s", escolherEstado);
         filtraEstado(numeroDeTarefas, escolherEstado);
         break;
       }
       case(7):{
-        printf("Digite a categoria das tarefas");
+
+        printf("Digite a categoria das tarefas: ");
         scanf("%s", escolherCategoria);
         filtraCategoria(numeroDeTarefas, escolherCategoria);
         break;
       }
       case(8):{
-        printf("Digite a categoria das tarefas");
+        printf("Digite a categoria das tarefas: ");
         scanf("%s", escolherCategoria);
-        printf("Digite a prioridade das tarefas");
+        printf("Digite a prioridade das tarefas: ");
         scanf("%d", &escolherPrioridade);
         filtraPrioridadeCategoria(numeroDeTarefas,escolherPrioridade, escolherCategoria);
         break;

@@ -7,13 +7,13 @@ Tarefas tarefas[100];
 
 void criaTarefas(int numeroTarefa){ 
 
-  printf("Digite a prioridade da Tarefa\n");
+  printf("Digite a prioridade da Tarefa: ");
   scanf("%d", &tarefas[numeroTarefa].prioridade);
   
-  printf("Digite a descrição da Tarefa\n");
+  printf("Digite a descrição da Tarefa: ");
   scanf("%s", tarefas[numeroTarefa].descricao);
   
-  printf("Digite a categoria da Tarefa\n");
+  printf("Digite a categoria da Tarefa: ");
   scanf("%s", tarefas[numeroTarefa].categoria);
   
   printf("Digite o estado da Tarefa\n");
@@ -60,6 +60,40 @@ void verficaPrioridade(int numeroDeTarefa){ // arrumar
     } 
   }
 }
+
+
+void alteraTarefa(int numeroDeTarefa, int prioridade){
+ char escolha[20];
+ int novaPrioridade;
+ char novoEstado[15];
+ char novaCategoria[100];
+ char novaDescricao[300];
+  for(int i = 0; i < numeroDeTarefa; i++){
+    if(prioridade == tarefas[i].prioridade){
+      printf("Digite o que deseja alterar: \n");
+      scanf("%s", escolha);
+      if(strcmp(escolha, "Prioridade") == 0){
+        printf("Digite a nova prioridade: ");
+        scanf("%d", &novaPrioridade);
+        tarefas[i].prioridade = novaPrioridade;
+      } else if(strcmp(escolha, "Estado") == 0){
+        printf("Digite o novo estado: ");
+        scanf("%s", novoEstado);
+        strcpy(tarefas[i].estado, novoEstado);
+      } else if(strcmp(escolha, "Categoria") == 0){
+        printf("Digite a nova categoria: ");
+        scanf("%s", novaCategoria);
+        strcpy(tarefas[i].categoria, novaCategoria);
+      } else if(strcmp(escolha, "Descrição") == 0){
+        printf("Digite a nova descrição: ");
+        scanf("%s", novaDescricao);
+        strcpy(tarefas[i].descricao, novaDescricao);
+      }
+    }
+  }
+}
+
+
 
 void filtraPrioridade(int numeroDeTarefa, int prioridade){
   for(int i = 0; i < numeroDeTarefa; i++){
