@@ -15,22 +15,30 @@ void criaTarefas(int numeroTarefa){
   
   printf("Digite a categoria da Tarefa\n");
   scanf("%s", tarefas[numeroTarefa].categoria);
+  
+  printf("Digite o estado da Tarefa\n");
+  scanf("%s", tarefas[numeroTarefa].estado);
 
   verficaPrioridade(numeroTarefa);
 
 }
 
-void deltarTarefa(int numeroTarefa, int prioridade){ // arrumar
-  for(int i = 0; i < numeroTarefa; i++){
-    if(tarefas[i].prioridade == prioridade){
-      tarefas[i] = tarefas[i - 1];
+void deltarTarefa(int numeroTarefa, int prioridade){ // arrumar 
+    for ( int i = 0; i < numeroTarefa; i++) {
+        if (tarefas[i].prioridade == prioridade) {
+          break;
+        }
+    for(; i < numeroTarefa - 1; i++){
+      tarefas[i] = tarefas[i + 1];
     }
   }
 }
 
+
 void listaTarefas(int numeroTarefa){
   for(int i = 0; i < numeroTarefa; i++){
     printf("Prioridade: %d \n", tarefas[i].prioridade);
+    printf("Estado: %s \n", tarefas[i].estado);
     printf("Categoria: %s \n", tarefas[i].categoria);
     printf("Descrição: %s \n", tarefas[i].descricao);
     }
@@ -53,3 +61,13 @@ void verficaPrioridade(int numeroDeTarefa){ // arrumar
   }
 }
 
+void filtraPrioridade(int numeroDeTarefa, int prioridade){
+  for(int i = 0; i < numeroDeTarefa; i++){
+    if(prioridade == tarefas[i].prioridade){
+      printf("Prioridade: %d \n", tarefas[i].prioridade);
+          printf("Estado: %s \n", tarefas[i].estado);
+          printf("Categoria: %s \n", tarefas[i].categoria);
+        printf("Descrição: %s \n", tarefas[i].descricao); 
+    }
+  }
+}

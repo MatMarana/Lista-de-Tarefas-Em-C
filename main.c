@@ -33,6 +33,12 @@ int main() {
             listaTarefas(numeroDeTarefas);
             break;
             }
+            case(4):{
+              printf("Digite a prioridade das tarefas");
+              scanf("%d", &escolherPrioridade);
+              filtraPrioridade(numeroDeTarefas,escolherPrioridade);
+              break;
+            }
             default:
                 printf("Opção inválida. Tente novamente.\n");
         }
