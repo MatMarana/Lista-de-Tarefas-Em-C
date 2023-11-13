@@ -158,3 +158,14 @@ void exportaCategoria(int numeroDeTarefa, char categoria[100]){
     }
     fclose(fp);
 }
+
+void exportaPrioridadeCategoria(int numeroDeTarefa, int prioridade, char categoria[100]){
+    FILE *fp;
+    fp = fopen("Prioridade e Categoria.txt", "w");
+    for (int i = 0; i < numeroDeTarefa; i++) {
+        if (strcmp(categoria, tarefas[i].categoria) == 0 && tarefas[i].prioridade == prioridade) {
+            fprintf(fp, "%d %s %s %s\n", tarefas[i].prioridade, tarefas[i].estado, tarefas[i].categoria, tarefas[i].descricao);
+        }
+    }
+    fclose(fp);
+}

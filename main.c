@@ -20,9 +20,9 @@ int main() {
     printf("6. Filtre Tarefas por Estado\n");
     printf("7. Filtre Tarefas por Categoria\n");
     printf("8. Filtre Tarefas por Prioridade e Categoria\n");
-    printf("9. Filtre Tarefas por Prioridade e as Veja em um Arquivo de Texto\n");
-    printf("10. Filtre Tarefas por Categoria e as Veja em um Arquivo de Texto\n");
-    printf("11. Filtre Tarefas por Prioridade e Categoria e as Veja em um Arquivo de Texto\n");
+    printf("9. Exportar por Prioridade em Arquivo de Texto\n");
+    printf("10. Exportar por Categoria em Arquivo de Texto\n");
+    printf("11. Exportar por Prioridade e Categoria em Arquivo de Texto\n");
     printf("Escolha uma opção: ");
     scanf("%d", &escolha);
 
@@ -85,6 +85,14 @@ int main() {
         printf("Digite a categoria das tarefas: ");
         scanf("%s", escolherCategoria);
         exportaCategoria(numeroDeTarefas, escolherCategoria);
+        break;
+      }
+      case(11):{
+        printf("Digite a categoria das tarefas: ");
+        scanf("%s", escolherCategoria);
+        printf("Digite a prioridade das tarefas: ");
+        scanf("%d", &escolherPrioridade);
+        exportaPrioridadeCategoria(numeroDeTarefas,escolherPrioridade, escolherCategoria);
         break;
       }
       default:{

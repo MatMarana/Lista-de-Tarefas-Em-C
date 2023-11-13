@@ -19,4 +19,5 @@ void filtraCategoria(int numeroDeTarefa, char categoria[100]);
 void filtraPrioridadeCategoria(int numeroDeTarefa, int prioridade, char categroia[100]);
 void exportaPrioridade(int numeroDeTarefa, int prioridade); 
 void exportaCategoria(int numeroDeTarefa, char categoria[100]); 
+void exportaPrioridadeCategoria(int numeroDeTarefa, int prioridade, char categoria[100]); 
 #endif 
