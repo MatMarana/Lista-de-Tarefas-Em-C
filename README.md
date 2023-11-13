@@ -23,16 +23,16 @@ Alterar Tarefas - Altera os dados presentes na tarefa
 --NA PARTE DE FILTRAGEM DE TAREFAS--
 
 
-Filtar Tarefas por Prioridade - Filtra tarefas pela prioridade delas-
+Filtar Tarefas por Prioridade - Filtra tarefas pela prioridade delas
 
 
-Filtar Tarefas por Estado - Filtra tarefas pelo estado delas-
+Filtar Tarefas por Estado - Filtra tarefas pelo estado delas
 
 
-Filtar Tarefas por Categoria - Filtra tarefas pela categoria delas-
+Filtar Tarefas por Categoria - Filtra tarefas pela categoria delas
 
 
-Filtar Tarefas por Categoria e Prioridade - Filtra tarefas pela prioridade e categoria delas-
+Filtar Tarefas por Categoria e Prioridade - Filtra tarefas pela prioridade e categoria delas
 
 
 --NA PARTE DE EXPORTAÇÃO DE TAREFAS--
@@ -40,6 +40,8 @@ Filtar Tarefas por Categoria e Prioridade - Filtra tarefas pela prioridade e cat
 
 Exporta Tarefas por Pioridade - Exporta tarefas em um aquiivo de texto por sua prioridade
 
+
 Exporta Tarefas por Categoria - Exporta tarefas em um aquiivo de texto por sua categoria
+
 
 Exporta Tarefas por Pioridade e Categoria - Exporta tarefas em um aquiivo de texto por sua prioridade e categoria
