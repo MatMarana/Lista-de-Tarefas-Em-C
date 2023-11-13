@@ -1,5 +1,5 @@
 # Lista-de-Tarefas-Em-C
-#Continuação do Projeto 1 feito nas aulas de desenvolvimento de Algoritmos
+Continuação do Projeto 1 feito nas aulas de desenvolvimento de Algoritmos
 
 Foi adiocionado um novo dado. O ESTADO DA TAREFA.
 Ela pode ser considerada:
