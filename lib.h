@@ -20,4 +20,6 @@ void filtraPrioridadeCategoria(int numeroDeTarefa, int prioridade, char categroi
 void exportaPrioridade(int numeroDeTarefa, int prioridade); 
 void exportaCategoria(int numeroDeTarefa, char categoria[100]); 
 void exportaPrioridadeCategoria(int numeroDeTarefa, int prioridade, char categoria[100]); 
+void salvar(Tarefas* lista, const char* nomeArquivo);
+Tarefas* carregar(int numeroDeTarefas, const char* nomeArquivo); 
 #endif 
