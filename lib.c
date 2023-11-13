@@ -16,7 +16,7 @@ void criaTarefas(int numeroTarefa){
   printf("Digite a categoria da Tarefa: ");
   scanf("%s", tarefas[numeroTarefa].categoria);
   
-  printf("Digite o estado da Tarefa\n");
+  printf("Digite o estado da Tarefa: ");
   scanf("%s", tarefas[numeroTarefa].estado);
 
   verficaPrioridade(numeroTarefa);
@@ -137,4 +137,37 @@ void filtraPrioridadeCategoria(int numeroDeTarefa, int prioridade, char categori
       printf("Descrição: %s \n", tarefas[i].descricao);
     }
   }
+}
+
+void exportaPrioridade(int numeroDeTarefa, int prioridade){
+    FILE *fp;
+    fp = fopen("Prioridade.txt", "w");
+    for (int i = 0; i < numeroDeTarefa; i++) {
+        if (tarefas[i].prioridade == prioridade) {
+            fprintf(fp, "%d %s %s %s\n", tarefas[i].prioridade, tarefas[i].estado, tarefas[i].categoria, tarefas[i].descricao);
+        }
+    }
+    fclose(fp);
+}
+
+void exportaCategoria(int numeroDeTarefa, char categoria[100]){
+    FILE *fp;
+    fp = fopen("Categoria.txt", "w");
+    for (int i = 0; i < numeroDeTarefa; i++) {
+        if (strcmp(categoria, tarefas[i].categoria) == 0) {
+            fprintf(fp, "%d %s %s %s\n", tarefas[i].prioridade, tarefas[i].estado, tarefas[i].categoria, tarefas[i].descricao);
+        }
+    }
+    fclose(fp);
+}
+
+void exportaPrioridadeCategoria(int numeroDeTarefa, int prioridade, char categoria[100]){
+    FILE *fp;
+    fp = fopen("Prioridade e Categoria.txt", "w");
+    for (int i = 0; i < numeroDeTarefa; i++) {
+        if (strcmp(categoria, tarefas[i].categoria) == 0 && tarefas[i].prioridade == prioridade) {
+            fprintf(fp, "%d %s %s %s\n", tarefas[i].prioridade, tarefas[i].estado, tarefas[i].categoria, tarefas[i].descricao);
+        }
+    }
+    fclose(fp);
 }
