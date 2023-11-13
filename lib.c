@@ -16,7 +16,7 @@ void criaTarefas(int numeroTarefa){
   printf("Digite a categoria da Tarefa: ");
   scanf("%s", tarefas[numeroTarefa].categoria);
   
-  printf("Digite o estado da Tarefa: ");
+  printf("Digite o estado da Tarefa\n");
   scanf("%s", tarefas[numeroTarefa].estado);
 
   verficaPrioridade(numeroTarefa);
@@ -61,6 +61,7 @@ void verficaPrioridade(int numeroDeTarefa){ // arrumar
   }
 }
 
+
 void alteraTarefa(int numeroDeTarefa, int prioridade){
  char escolha[20];
  int novaPrioridade;
@@ -91,6 +92,7 @@ void alteraTarefa(int numeroDeTarefa, int prioridade){
     }
   }
 }
+
 
 
 void filtraPrioridade(int numeroDeTarefa, int prioridade){
