@@ -57,6 +57,7 @@ void verficaPrioridade(int numeroDeTarefa){
   }
 }
 
+
 void alteraTarefa(int numeroDeTarefa, int prioridade){
  char escolha[20]; // variavel que armazena a escolha feita pelo usuario
  int novaPrioridade; // variavel que armazena a nova prioidade da tarefa
