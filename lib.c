@@ -61,6 +61,7 @@ void verficaPrioridade(int numeroDeTarefa){ // arrumar
   }
 }
 
+
 void alteraTarefa(int numeroDeTarefa, int prioridade){
  char escolha[20];
  int novaPrioridade;
@@ -91,6 +92,7 @@ void alteraTarefa(int numeroDeTarefa, int prioridade){
     }
   }
 }
+
 
 
 void filtraPrioridade(int numeroDeTarefa, int prioridade){

@@ -44,12 +44,15 @@ int main() {
       break;
       }
       case(4):{
+
+
         printf("Digite a prioridade da Tarefa que deseja alterar: ");
         scanf("%d", &escolherPrioridade);
         alteraTarefa(numeroDeTarefas, escolherPrioridade);
         break;
       }
       case(5):{
+
         printf("Digite a prioridade das tarefas: ");
         scanf("%d", &escolherPrioridade);
         filtraPrioridade(numeroDeTarefas,escolherPrioridade);
@@ -62,6 +65,7 @@ int main() {
         break;
       }
       case(7):{
+
         printf("Digite a categoria das tarefas: ");
         scanf("%s", escolherCategoria);
         filtraCategoria(numeroDeTarefas, escolherCategoria);
