@@ -1,8 +1,9 @@
 # Lista-de-Tarefas-Em-C
 Continuação do Projeto 1 feito nas aulas de desenvolvimento de Algoritmos
 
-Foi adiocionado um novo dado. O ESTADO DA TAREFA.
+Foi adicionado um novo dado. O ESTADO DA TAREFA.
 Ela pode ser considerada:
+
 Em andamento;
 Concluida;
 Não iniciado;
