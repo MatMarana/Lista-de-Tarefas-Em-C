@@ -82,3 +82,14 @@ void filtraEstado(int numeroDeTarefa, char estado[15]){
     }
   }
 }
+
+void filtraCategoria(int numeroDeTarefa, char categoria[100]){
+  for(int i = 0; i < numeroDeTarefa; i++){
+    if(strcmp(categoria, tarefas[i].categoria) == 0){
+      printf("Prioridade: %d \n", tarefas[i].prioridade);
+          printf("Estado: %s \n", tarefas[i].estado);
+          printf("Categoria: %s \n", tarefas[i].categoria);
+        printf("Descrição: %s \n", tarefas[i].descricao);
+    }
+  }
+}
