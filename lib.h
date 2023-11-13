@@ -14,4 +14,6 @@ void deltarTarefa(int numeroTarefa, int prioridade);
 void verficaPrioridade(int numeroDeTarefa);
 
 void filtraPrioridade(int numeroDeTarefa, int prioridade);
+void filtraEstado(int numeroDeTarefa, char estado[15]);
+
 #endif 
