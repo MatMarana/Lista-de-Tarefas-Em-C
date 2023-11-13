@@ -16,4 +16,5 @@ void verficaPrioridade(int numeroDeTarefa);
 void filtraPrioridade(int numeroDeTarefa, int prioridade);
 void filtraEstado(int numeroDeTarefa, char estado[15]);
 void filtraCategoria(int numeroDeTarefa, char categoria[100]);
+void filtraPrioridadeCategoria(int numeroDeTarefa, int prioridade, char categroia[100]);
 #endif 

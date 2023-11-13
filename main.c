@@ -60,6 +60,14 @@ int main() {
         filtraCategoria(numeroDeTarefas, escolherCategoria);
         break;
       }
+      case(8):{
+        printf("Digite a categoria das tarefas");
+        scanf("%s", escolherCategoria);
+        printf("Digite a prioridade das tarefas");
+        scanf("%d", &escolherPrioridade);
+        filtraPrioridadeCategoria(numeroDeTarefas,escolherPrioridade, escolherCategoria);
+        break;
+      }
       default:{
         printf("Opção inválida. Tente novamente.\n");
       }
