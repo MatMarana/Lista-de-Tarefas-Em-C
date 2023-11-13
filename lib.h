@@ -12,9 +12,10 @@ void criaTarefas(int numeroTarefa);
 void listaTarefas(int numeroTarefa);
 void deltarTarefa(int numeroTarefa, int prioridade);
 void verficaPrioridade(int numeroDeTarefa);
-
+void alteraTarefa(int numeroDeTarefa, int prioridade);
 void filtraPrioridade(int numeroDeTarefa, int prioridade);
 void filtraEstado(int numeroDeTarefa, char estado[15]);
 void filtraCategoria(int numeroDeTarefa, char categoria[100]);
 void filtraPrioridadeCategoria(int numeroDeTarefa, int prioridade, char categroia[100]);
+void exportaPrioridade(int numeroDeTarefa, int prioridade); 
 #endif 
