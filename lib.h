@@ -3,6 +3,7 @@
 
 typedef struct Tarefas { 
  int prioridade;
+ char estado[15];
  char categoria[100];
  char descricao[300];
 } Tarefas;
@@ -11,4 +12,8 @@ void criaTarefas(int numeroTarefa);
 void listaTarefas(int numeroTarefa);
 void deltarTarefa(int numeroTarefa, int prioridade);
 void verficaPrioridade(int numeroDeTarefa);
+
+void filtraPrioridade(int numeroDeTarefa, int prioridade);
+void filtraEstado(int numeroDeTarefa, char estado[15]);
+
 #endif 
